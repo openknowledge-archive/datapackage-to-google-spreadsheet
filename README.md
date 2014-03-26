@@ -43,5 +43,12 @@ DataPackages.importDataPackageUi();
   5. There is now a new Data Packages menu in your spreadsheet. Whenever you open the spreadsheet in the future it will be there.
 
 ## Data Requirements
-Currently, the library can cope with a single CSV file from a tabular data package. The field separator should be a comma, the text delimiter should be " and the line separator should be \n. That means we're not yet fully conformant with the specification, but this will hopefully be achieved soon via a more general API that pre-processes the data according to format and dialect. 
+Currently, the library can cope with a single CSV file from a tabular data package. The field separator should be a comma, the text delimiter should be `"` and the line separator should be `\n`. That means we're not yet fully conformant with the specification, but this will hopefully be achieved soon via a more general API that pre-processes the data according to format and dialect. 
+
+## Deploying
+The contents of the file `library.gs.js` should replace the code here:
+
+https://script.google.com/macros/d/1GLuZPrroyUP4WkHm4aAT4Z2QUqoL60LhEJnomYZT7nzaMDjptOneTNdJ/edit
+
+The contents of the file `linking_code.gs.js` need to be placed in the spreadsheet script, and the `README.md` (this file) updated accordingly.
 
