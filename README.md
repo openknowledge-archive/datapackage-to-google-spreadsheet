@@ -8,7 +8,7 @@ To import a tabular data pacakage into Google Spreadsheets:
 
   1. Go to https://docs.google.com/spreadsheet/ccc?key=0AqR8dXc6Ji4JdG15Z1BhNXpCMFBnVTY5LUpoTGNrY0E#gid=0
   2. Make a copy of the sheet
-  3. Go to Data Packages Menu -> Import Data. On the first run, you will be asked for authorization.
+  3. Go to Data Packages Menu -> Import Data (on the first run, you will be asked for authorization)
   4. Paste in the url: http://data.okfn.org/data/house-prices-us/datapackage.json
   5. Watch the data load!
 
@@ -22,22 +22,24 @@ To use the script in your own spreadsheets:
   1. In your spreadsheet open the script editor to create a new script
   2. Include the library. To do this:
     
-    * Go to Resources => Manage Resources
-    * Use the project id: MH6zwb-_fUDq8QyPrl-PbJlu_4T1jeIs_
-    * Make sure that the latest version is selected
-    * More information on using libraries can be found here: https://developers.google.com/apps-script/guide_libraries#useLibrary
+      1. Go to Resources => Manage Resources
+      2. Use the project id: MH6zwb-_fUDq8QyPrl-PbJlu_4T1jeIs_
+      3. Make sure that the latest version is selected
+      4. More information on using libraries can be found here:
+          https://developers.google.com/apps-script/guide_libraries#useLibrary
 
   3. Copy and paste the following into your script and hit save:
 
-        function onOpen() {
-          DataPackages.onOpen();
-        }
-    
-        function importDataPackageUi() {
-          DataPackages.importDataPackageUi();
-        }
+  ```javascript
+function onOpen() {
+DataPackages.onOpen();
+}
+function importDataPackageUi() {
+DataPackages.importDataPackageUi();
+}
+  ```
 
-  4. Hit run.
+  4. Hit run
   5. There is now a new Data Packages menu in your spreadsheet. Whenever you open the spreadsheet in the future it will be there.
 
 ## Data Requirements
